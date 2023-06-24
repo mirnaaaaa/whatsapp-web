@@ -45,7 +45,14 @@ export const Messages = ({ message }: MessageType) => {
           <Typography mx={1} mt={0.5} variant="body1">
             {message.text}
           </Typography>
-          {message.photo && <img src={message.photo} alt="photos" />}
+          {message.photo && (
+            <Avatar
+              variant="square"
+              sx={{ width: "208px", height: "208px", m: "8px" }}
+              src={message.photo}
+              alt="photos"
+            />
+          )}
           <Moment className="messageTime" fromNow>
             {message?.time.toDate()}
           </Moment>

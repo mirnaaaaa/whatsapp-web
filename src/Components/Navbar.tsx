@@ -72,7 +72,7 @@ export default function Navbar({ setShow, setShowContacts }: ShowType) {
             }}
           >
             <Stack>
-              <Avatar alt={user.Name} src={user.avatarPath} />
+              <Avatar alt="profile" src={user?.avatarPath} />
             </Stack>
             <Box
               sx={{
